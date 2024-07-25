@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Create User Account</h1>
+    <form>
+        <label for="fullname">Full Name:</label>
+        <input type="text" name="fullname" id="fullname" placeholder="fullname" required>
+        <br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" id="email" placeholder="email" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required placeholder="password">
+        <br><br>
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" name="confirm_password" id="confirm_password" required placeholder="re-password">
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="text" name="dob" id="dob" pattern="\d{4}-\d{2}-\d{2}" required placeholder="dd/mm/yyyy">
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" name="phone" id="phone" pattern="[+][9][1]\d{10}" required placeholder="+91 1234567890">
+        <br><br>
+
+        <label for="credit_card">Credit Card Number:</label>
+        <input type="text" name="credit_card" id="credit_card" pattern="\d{16}" required placeholder="xxxx xxxx xxxx xxxx">
+        <br><br>
+
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" pattern="^[a-zA-Z0-9]+$" required placeholder="@xyz">
+        <br><br>
+
+        <label for="website">Website URL </label>
+        <input type="text" name="website" id="website" pattern="https?://.+" required placeholder="https://www.xyz.com">
+        <br><br>
+
+        <label for="text">Comments:</label>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        <br><br>
+
+        <fieldset>
+                <legend>Choose The Subscription Plan</legend>
+                <input type="radio" id="yes" name="terms" checked>
+                <label for="yes">PLAN-A</label>
+                <input type="radio" id="no" name="terms">
+                <label for="no">PLAN-B</label>
+        </fieldset>
+        <br><br>
+
+        <label for="drop-down">Country</label>
+        <select  id="drop-down">
+            <option value="01">Austrlia</option>
+            <option value="02">England</option>
+            <option value="03" selected>India</option>
+        </select>
+        <br><br>
+
+        <input type="range" min="100" max="1000" value="100" step="100">
+        <br><br>
+
+        <button type="reset">reset</button>
+        <br><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+
+</body>
+
+</html>
