@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.todo{
+    border:1px solid black;
+    height:35rem;
+    width:35rem;
+}
+
+h1{
+    text-align: center;
+    margin-bottom:3rem;
+}
+
+#inputArea{
+    padding:10px;
+    width:23rem;
+}
+
+.add-btn{
+    padding:10px;
+}
+
+.input-area{
+    text-align: center;
+    margin-top:3rem;
+}
+
+h2{
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+
+ h2{
+    text-align: center;
+}
+
+ul{
+    border:2px solid black;
+    margin:auto;
+    height:20rem;
+    width:28rem;
+    margin-bottom:3rem;
+}
+
