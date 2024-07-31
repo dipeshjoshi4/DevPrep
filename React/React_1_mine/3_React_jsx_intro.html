@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React_jsx_intro</title>
+    <!-- react algorithm -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <!-- react dom algorithm -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- transpiler -> translator  -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- THIS 2 THING VERY IMPORTANT  -->
+    <!-- in head -->
+    <!-- <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> --> 
+    <!-- with script tag -->
+    <!--  <script type="text/babel"> -->
+</head>
+<body>
+    <h1>React With JSX</h1>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        const rootElement = document.getElementById('root')
+        function Heading() {
+            return <h1> I am Your Heading jsx</h1>
+        }
+        ReactDOM.render(<Heading></Heading>, rootElement)
+
+    </script>
+</body>
+
+</html>
+
+<!-- we dont make it  whole big app on cdn  -->
+<!-- and we can not make all code in file in one componenet so we use build tools -->

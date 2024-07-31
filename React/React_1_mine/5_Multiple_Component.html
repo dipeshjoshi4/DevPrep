@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- react algorithm -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <!-- react dom algorithm -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- transpiler -> translator  -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+</head>
+
+<body>
+    <h1>Multiple Components example</h1>
+    <!-- its called component composition -->
+    <div id="root">
+
+    </div>
+    <script type="text/babel">
+        const rootElement = document.getElementById('root');
+
+
+        // functions that returns -> html
+        function Heading(props) {
+            const name = props.name;
+            const age = props.age;
+            return <h1>Hi My Name is {name} and my age is {age}</h1>
+        }
+        function HeadingParent() {
+            return (
+                <div>
+                    <Heading name={"dipesh"} age={24}></Heading>
+                    <Heading name={"Hardik"} age={29}></Heading>
+                    <Heading name={"Pratik"} age={28}></Heading>
+                    <Heading name={"bharat"} age={55}></Heading>
+                    <Heading name={"bharad"} age={32}></Heading>
+                </div>
+            )
+        }
+
+        // ReactDOM-> 1
+        ReactDOM.render(<HeadingParent></HeadingParent>, rootElement)
+
+    </script>
+</body>
+
+</html>
