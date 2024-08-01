@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas-1(Code With Dignity)</title>
+    <style>
+        canvas{
+            border:1px solid rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <canvas width="800" height="600" id="canvas"></canvas>
+    <script>
+        let canvas = document.querySelector("#canvas")
+
+        //for created graphics in canvas
+        let ctx = canvas.getContext("2d")
+
+        //created fill Reactangle => ctx.fillRect(x,y,width,height)
+        ctx.fillStyle="pink";
+        ctx.fillRect(200,50,300,300)
+
+        //created stroke Reactangle => ctx.fillRect(x,y,width,height) 
+        ctx.strokeStyle = "red"
+        ctx.strokeRect(200,50,300,500)
+        
+    </script>
+</body>
+</html>
+
+<!-- canvas make for this things -->
+<!-- graphics -->
+<!-- canvas make games -->
+<!-- animation  -->

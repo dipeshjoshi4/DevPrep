@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas-2</title>
+    <style>
+        canvas {
+            border: 2px solid rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="400" id="canvas"></canvas>
+    <script>
+        let canvas = document.querySelector("#canvas")
+        let ctx = canvas.getContext("2d");
+
+        //arc-method for arc(part of circle) and circle
+        // ===> (x(circle ka centre ka x),y(circle ka centre ka y),r(radius),sAngle(starting),eAngle(ending))
+
+        ctx.arc(300,200,100,0,1.5*Math.PI)
+
+        // ctx.fillStyle = "cyan"
+        // ctx.fill()
+
+        ctx.strokeStyle = "red"
+        ctx.stroke()
+    </script>
+</body>
+
+</html>
