@@ -19,8 +19,8 @@
 
         const rootElement = document.getElementById('root');
 
-        function inner(elem){
-            return <li> 
+        function inner(elem,index){
+            return <li key={index} > 
                 <div> {elem} </div>
                 <button>Click</button>
                 </li>

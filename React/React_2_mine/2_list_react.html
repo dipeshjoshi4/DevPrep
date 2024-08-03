@@ -25,9 +25,9 @@
             const cart = ["Apple", "Oranges", "Brocoli", "Grapes"];
             return (
                 <ul>
-                    {cart.map((elem) => {
+                    {cart.map((elem, index) => {
                         return (
-                            <li>
+                            <li key={index} >
                                 <div>{elem}</div>
                                 <button>Click</button>
                             </li>
