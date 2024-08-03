@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JS FOR REACT MAp function born,custom map function and js inbuild map function</h1>
+    <script>
+
+        //! Example-1
+        // function inner(){
+        //     console.log("i am inner")
+        // }
+        // function outer(innerRef){
+        //     console.log("i am outer");
+        //     innerRef()
+        // }
+        // outer(inner) 
+        // we can call a function in another function - here inner function refernece pass into outer function
+        //OUTPUT - i am inner 
+        //i am inner
+
+        //! Example-2-duplicacy can be ignored
+
+        //Example-A
+        // let arr = [10,20,30,40,50];
+        // let newArray = [];
+        // for(let i = 0; i<arr.length; i++){
+        //     let squareValue = arr[i] * arr[i];
+        //     newArray.push(squareValue);
+        // }
+        // console.log(newArray); //[100,400,900,1600,2500]
+
+        //Example-B
+        // let arr = [10,20,30,40,50];
+        // let cubeArray = [];
+        // for(let i = 0; i<arr.length; i++){
+        //     let cubeValue = arr[i] * arr[i] * arr[i];
+        //     cubeArray.push(cubeValue);
+        // }
+        // console.log(cubeArray); //[1000,8000,27000,64000,125000]
+
+        //! Now IGNORE DUPLICACY 
+        // for that we ned use map function like this
+        // Custom MAP Function
+
+        // let arr = [10, 20, 30, 40, 50];
+        // function map(arr, callback) {
+        //     let cubeArray = [];
+        //     for (let i = 0; i < arr.length; i++) {
+        //         let cubeValue = callback(arr[i])
+        //             cubeArray.push(cubeValue);
+        //     }
+        //     return cubeArray;
+        // }
+        // function cube(elem){
+        //     return elem * elem * elem
+        // }
+        // const finalAns = map(arr,cube)
+        // console.log(finalAns) //1000,8000,27000,64000,125000
+
+        //in js many people use this function so js itself give map function by Own
+
+        let arr = [10, 20, 30, 40, 50];
+
+        function cube(elem){
+            return elem * elem * elem;
+        }
+
+        function square(elem){
+            return elem * elem ;
+        }
+
+        const squareArray = arr.map(square);
+        console.log(squareArray)
+
+        const cuberArray = arr.map(cube);
+        console.log(cuberArray)
+      
+        
+
+
+
+
+    </script>
+
+</body>
+
+</html>
